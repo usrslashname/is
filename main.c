@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     setenv("APPLICATION_NAME", argv[1], 1);
     setenv("PROPERTY", argv[2], 1);
     /* Execute shell script */
-    execvp("sh", "sh", "$PROPERTY.sh");
+    execlp("sh", "sh", "-c", "exec $PROPERTY.sh", (char *)NULL);
   }
  return 0;
 }
