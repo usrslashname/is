@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <uninstd.h>
+#include <unistd.h>
 
 int main(int argc, char *argv[]) { 
   if (argc < 3 || argc > 4) {
