@@ -3,10 +3,10 @@
 #include <unistd.h>
 
 int main(int argc, char *argv[]) { 
-  if (argc < 3 || argc > 4) {
+  if (argc != 3) {
     /* If the argc somehow doesn't equal 3 */
     printf("Usage:\n");
-    printf("is [APPLICATION] [PROPERTY]");
+    printf("is [APPLICATION] [PROPERTY]\n");
     return 1;
   }
 
