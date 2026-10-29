@@ -7,7 +7,7 @@ BINDIR = $(PREFIX)/bin
 
 SRCS = main.c
 OBJS = $(SRCS:.c=.o)
-SCRIPTS = gnu.sh
+SCRIPTS = gnu.sh busybox.sh
 
 all: $(TARGET) permissions
 
